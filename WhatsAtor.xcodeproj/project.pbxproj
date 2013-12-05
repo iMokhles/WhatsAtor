@@ -1,0 +1,356 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4306364718509D870017DBFD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4306364618509D870017DBFD /* Foundation.framework */; };
+		4306364918509D870017DBFD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4306364818509D870017DBFD /* UIKit.framework */; };
+		4306365218509D870017DBFD /* WhatsAtor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4306365118509D870017DBFD /* WhatsAtor.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4306364318509D870017DBFD /* WhatsAtor.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = WhatsAtor.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		4306364618509D870017DBFD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4306364818509D870017DBFD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4306364D18509D870017DBFD /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		4306364E18509D870017DBFD /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		4306365018509D870017DBFD /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		4306365118509D870017DBFD /* WhatsAtor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WhatsAtor.m; sourceTree = "<group>"; };
+		4306365618509D870017DBFD /* WhatsAtor.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = WhatsAtor.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/WhatsAtor.plist; sourceTree = "<group>"; };
+		4306365A18509D870017DBFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Package/Library/Activator/Listeners/com.imokhles.WhatsAtor/Info.plist; sourceTree = "<group>"; };
+		4306365B18509D870017DBFD /* Icon-small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-small.png"; path = "Package/Library/Activator/Listeners/com.imokhles.WhatsAtor/Icon-small.png"; sourceTree = "<group>"; };
+		4306365C18509D870017DBFD /* Icon-small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-small@2x.png"; path = "Package/Library/Activator/Listeners/com.imokhles.WhatsAtor/Icon-small@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4306363F18509D870017DBFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4306364718509D870017DBFD /* Foundation.framework in Frameworks */,
+				4306364918509D870017DBFD /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4306363918509D870017DBFD = {
+			isa = PBXGroup;
+			children = (
+				4306364A18509D870017DBFD /* WhatsAtor */,
+				4306364518509D870017DBFD /* Frameworks */,
+				4306364418509D870017DBFD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4306364418509D870017DBFD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4306364318509D870017DBFD /* WhatsAtor.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4306364518509D870017DBFD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4306364618509D870017DBFD /* Foundation.framework */,
+				4306364818509D870017DBFD /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4306364A18509D870017DBFD /* WhatsAtor */ = {
+			isa = PBXGroup;
+			children = (
+				4306365118509D870017DBFD /* WhatsAtor.m */,
+				4306364B18509D870017DBFD /* Package */,
+				4306364F18509D870017DBFD /* Supporting Files */,
+			);
+			path = WhatsAtor;
+			sourceTree = "<group>";
+		};
+		4306364B18509D870017DBFD /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				4306364C18509D870017DBFD /* DEBIAN */,
+				4306365318509D870017DBFD /* Library */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		4306364C18509D870017DBFD /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				4306364D18509D870017DBFD /* control.txt */,
+				4306364E18509D870017DBFD /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		4306364F18509D870017DBFD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4306365018509D870017DBFD /* PackageVersion.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4306365318509D870017DBFD /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				4306365418509D870017DBFD /* MobileSubstrate */,
+				4306365718509D870017DBFD /* Activator */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		4306365418509D870017DBFD /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				4306365518509D870017DBFD /* DynamicLibraries */,
+			);
+			name = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		4306365518509D870017DBFD /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				4306365618509D870017DBFD /* WhatsAtor.plist */,
+			);
+			name = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+		4306365718509D870017DBFD /* Activator */ = {
+			isa = PBXGroup;
+			children = (
+				4306365818509D870017DBFD /* Listeners */,
+			);
+			name = Activator;
+			sourceTree = "<group>";
+		};
+		4306365818509D870017DBFD /* Listeners */ = {
+			isa = PBXGroup;
+			children = (
+				4306365918509D870017DBFD /* ___VARIABLE_bundleIdentifierPrefix:bundleIdentifier___.___VARIABLE_productName:RFC1034Identifier___ */,
+			);
+			name = Listeners;
+			sourceTree = "<group>";
+		};
+		4306365918509D870017DBFD /* ___VARIABLE_bundleIdentifierPrefix:bundleIdentifier___.___VARIABLE_productName:RFC1034Identifier___ */ = {
+			isa = PBXGroup;
+			children = (
+				4306365A18509D870017DBFD /* Info.plist */,
+				4306365B18509D870017DBFD /* Icon-small.png */,
+				4306365C18509D870017DBFD /* Icon-small@2x.png */,
+			);
+			name = "___VARIABLE_bundleIdentifierPrefix:bundleIdentifier___.___VARIABLE_productName:RFC1034Identifier___";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4306364018509D870017DBFD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4306364218509D870017DBFD /* WhatsAtor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4306365F18509D870017DBFD /* Build configuration list for PBXNativeTarget "WhatsAtor" */;
+			buildPhases = (
+				4306363E18509D870017DBFD /* Sources */,
+				4306363F18509D870017DBFD /* Frameworks */,
+				4306364018509D870017DBFD /* Headers */,
+				4306364118509D870017DBFD /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WhatsAtor;
+			productName = WhatsAtor;
+			productReference = 4306364318509D870017DBFD /* WhatsAtor.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4306363A18509D870017DBFD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+			};
+			buildConfigurationList = 4306363D18509D870017DBFD /* Build configuration list for PBXProject "WhatsAtor" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4306363918509D870017DBFD;
+			productRefGroup = 4306364418509D870017DBFD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4306364218509D870017DBFD /* WhatsAtor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4306364118509D870017DBFD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4306363E18509D870017DBFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4306365218509D870017DBFD /* WhatsAtor.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4306365D18509D870017DBFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_ENABLE_MODULES = YES;
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		4306365E18509D870017DBFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_ENABLE_MODULES = YES;
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		4306366018509D870017DBFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		4306366118509D870017DBFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4306363D18509D870017DBFD /* Build configuration list for PBXProject "WhatsAtor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4306365D18509D870017DBFD /* Debug */,
+				4306365E18509D870017DBFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4306365F18509D870017DBFD /* Build configuration list for PBXNativeTarget "WhatsAtor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4306366018509D870017DBFD /* Debug */,
+				4306366118509D870017DBFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4306363A18509D870017DBFD /* Project object */;
+}
