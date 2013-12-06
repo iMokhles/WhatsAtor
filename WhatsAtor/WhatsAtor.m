@@ -13,9 +13,6 @@
 #import <UIKit/UIKit.h>
 #import <libactivator/libactivator.h>
 
-#error iOSOpenDev post-project creation from template requirements (remove these lines after completed) -- \
- Link to libactivator.dylib: \
- (1) go to TARGETS > Build Phases > Link Binary With Libraries and add /opt/iOSOpenDev/lib/libactivator.dylib
 
 @interface WhatsAtor : NSObject<LAListener, UIAlertViewDelegate> {
 @private

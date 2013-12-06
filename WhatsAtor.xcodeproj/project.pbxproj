@@ -9,7 +9,14 @@
 /* Begin PBXBuildFile section */
 		4306364718509D870017DBFD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4306364618509D870017DBFD /* Foundation.framework */; };
 		4306364918509D870017DBFD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4306364818509D870017DBFD /* UIKit.framework */; };
-		4306365218509D870017DBFD /* WhatsAtor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4306365118509D870017DBFD /* WhatsAtor.m */; };
+		4306366318509DA30017DBFD /* libactivator.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4306366218509DA30017DBFD /* libactivator.dylib */; };
+		4306366618509EAE0017DBFD /* WhatsAtorListener.h in Headers */ = {isa = PBXBuildFile; fileRef = 4306366418509EAE0017DBFD /* WhatsAtorListener.h */; };
+		4306366718509EAE0017DBFD /* WhatsAtorListener.m in Sources */ = {isa = PBXBuildFile; fileRef = 4306366518509EAE0017DBFD /* WhatsAtorListener.m */; };
+		4306366A18509FC00017DBFD /* WhatsAtorViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4306366818509FC00017DBFD /* WhatsAtorViewController.h */; };
+		4306366B18509FC00017DBFD /* WhatsAtorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4306366918509FC00017DBFD /* WhatsAtorViewController.m */; };
+		4306366D1850A71C0017DBFD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4306366C1850A71C0017DBFD /* CoreGraphics.framework */; };
+		43FB2B3E1850C0BE00B864F8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43FB2B3D1850C0BE00B864F8 /* QuartzCore.framework */; };
+		A19ED75A4F9444C69D1F9F20 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B9C453900F74ACD9B8195A9 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,11 +26,20 @@
 		4306364D18509D870017DBFD /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
 		4306364E18509D870017DBFD /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
 		4306365018509D870017DBFD /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
-		4306365118509D870017DBFD /* WhatsAtor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WhatsAtor.m; sourceTree = "<group>"; };
 		4306365618509D870017DBFD /* WhatsAtor.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = WhatsAtor.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/WhatsAtor.plist; sourceTree = "<group>"; };
 		4306365A18509D870017DBFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Package/Library/Activator/Listeners/com.imokhles.WhatsAtor/Info.plist; sourceTree = "<group>"; };
 		4306365B18509D870017DBFD /* Icon-small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-small.png"; path = "Package/Library/Activator/Listeners/com.imokhles.WhatsAtor/Icon-small.png"; sourceTree = "<group>"; };
 		4306365C18509D870017DBFD /* Icon-small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-small@2x.png"; path = "Package/Library/Activator/Listeners/com.imokhles.WhatsAtor/Icon-small@2x.png"; sourceTree = "<group>"; };
+		4306366218509DA30017DBFD /* libactivator.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libactivator.dylib; path = ../../../../../../opt/iOSOpenDev/lib/libactivator.dylib; sourceTree = "<group>"; };
+		4306366418509EAE0017DBFD /* WhatsAtorListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhatsAtorListener.h; sourceTree = "<group>"; };
+		4306366518509EAE0017DBFD /* WhatsAtorListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhatsAtorListener.m; sourceTree = "<group>"; };
+		4306366818509FC00017DBFD /* WhatsAtorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhatsAtorViewController.h; sourceTree = "<group>"; };
+		4306366918509FC00017DBFD /* WhatsAtorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhatsAtorViewController.m; sourceTree = "<group>"; };
+		4306366C1850A71C0017DBFD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		43FB2B3D1850C0BE00B864F8 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		43FB2B3F1850C98500B864F8 /* bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bg@2x.png"; path = "Package/Library/Activator/Listeners/com.imokhles.WhatsAtor/bg@2x.png"; sourceTree = "<group>"; };
+		9B9C453900F74ACD9B8195A9 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3006DBDEF84440789A0EA05 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,8 +47,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43FB2B3E1850C0BE00B864F8 /* QuartzCore.framework in Frameworks */,
+				4306366D1850A71C0017DBFD /* CoreGraphics.framework in Frameworks */,
+				4306366318509DA30017DBFD /* libactivator.dylib in Frameworks */,
 				4306364718509D870017DBFD /* Foundation.framework in Frameworks */,
 				4306364918509D870017DBFD /* UIKit.framework in Frameworks */,
+				A19ED75A4F9444C69D1F9F20 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,6 +65,7 @@
 				4306364A18509D870017DBFD /* WhatsAtor */,
 				4306364518509D870017DBFD /* Frameworks */,
 				4306364418509D870017DBFD /* Products */,
+				A3006DBDEF84440789A0EA05 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,8 +80,12 @@
 		4306364518509D870017DBFD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				43FB2B3D1850C0BE00B864F8 /* QuartzCore.framework */,
+				4306366C1850A71C0017DBFD /* CoreGraphics.framework */,
+				4306366218509DA30017DBFD /* libactivator.dylib */,
 				4306364618509D870017DBFD /* Foundation.framework */,
 				4306364818509D870017DBFD /* UIKit.framework */,
+				9B9C453900F74ACD9B8195A9 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -68,7 +93,10 @@
 		4306364A18509D870017DBFD /* WhatsAtor */ = {
 			isa = PBXGroup;
 			children = (
-				4306365118509D870017DBFD /* WhatsAtor.m */,
+				4306366418509EAE0017DBFD /* WhatsAtorListener.h */,
+				4306366518509EAE0017DBFD /* WhatsAtorListener.m */,
+				4306366818509FC00017DBFD /* WhatsAtorViewController.h */,
+				4306366918509FC00017DBFD /* WhatsAtorViewController.m */,
 				4306364B18509D870017DBFD /* Package */,
 				4306364F18509D870017DBFD /* Supporting Files */,
 			);
@@ -137,19 +165,20 @@
 		4306365818509D870017DBFD /* Listeners */ = {
 			isa = PBXGroup;
 			children = (
-				4306365918509D870017DBFD /* ___VARIABLE_bundleIdentifierPrefix:bundleIdentifier___.___VARIABLE_productName:RFC1034Identifier___ */,
+				4306365918509D870017DBFD /* com.imokhles.WhatsAtor */,
 			);
 			name = Listeners;
 			sourceTree = "<group>";
 		};
-		4306365918509D870017DBFD /* ___VARIABLE_bundleIdentifierPrefix:bundleIdentifier___.___VARIABLE_productName:RFC1034Identifier___ */ = {
+		4306365918509D870017DBFD /* com.imokhles.WhatsAtor */ = {
 			isa = PBXGroup;
 			children = (
+				43FB2B3F1850C98500B864F8 /* bg@2x.png */,
 				4306365A18509D870017DBFD /* Info.plist */,
 				4306365B18509D870017DBFD /* Icon-small.png */,
 				4306365C18509D870017DBFD /* Icon-small@2x.png */,
 			);
-			name = "___VARIABLE_bundleIdentifierPrefix:bundleIdentifier___.___VARIABLE_productName:RFC1034Identifier___";
+			name = com.imokhles.WhatsAtor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,6 +188,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4306366618509EAE0017DBFD /* WhatsAtorListener.h in Headers */,
+				4306366A18509FC00017DBFD /* WhatsAtorViewController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,10 +200,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4306365F18509D870017DBFD /* Build configuration list for PBXNativeTarget "WhatsAtor" */;
 			buildPhases = (
+				58B8E3842396444BA964E93D /* Check Pods Manifest.lock */,
 				4306363E18509D870017DBFD /* Sources */,
 				4306363F18509D870017DBFD /* Frameworks */,
 				4306364018509D870017DBFD /* Headers */,
 				4306364118509D870017DBFD /* ShellScript */,
+				95BB8E2AEDE0464A8DB89288 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -222,6 +255,36 @@
 			shellPath = /bin/sh;
 			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
 		};
+		58B8E3842396444BA964E93D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		95BB8E2AEDE0464A8DB89288 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -229,7 +292,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4306365218509D870017DBFD /* WhatsAtor.m in Sources */,
+				4306366B18509FC00017DBFD /* WhatsAtorViewController.m in Sources */,
+				4306366718509EAE0017DBFD /* WhatsAtorListener.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,7 +303,7 @@
 		4306365D18509D870017DBFD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ENABLE_MODULES = YES;
 				COPY_PHASE_STRIP = NO;
 				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
@@ -272,7 +336,7 @@
 		4306365E18509D870017DBFD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ENABLE_MODULES = YES;
 				COPY_PHASE_STRIP = YES;
 				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
@@ -296,11 +360,22 @@
 		};
 		4306366018509D870017DBFD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3006DBDEF84440789A0EA05 /* Pods.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
+				HEADER_SEARCH_PATHS = (
+					"\"${PODS_ROOT}/Headers\"",
+					"\"${PODS_ROOT}/Headers/REComposeViewController\"",
+					"$(iOSOpenDevPath)/include",
+					"$(inherited)",
+				);
 				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/iOSOpenDev/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				iOSOpenDevBuildPackageOnAnyBuild = NO;
 				iOSOpenDevCopyOnBuild = NO;
@@ -314,11 +389,22 @@
 		};
 		4306366118509D870017DBFD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3006DBDEF84440789A0EA05 /* Pods.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
+				HEADER_SEARCH_PATHS = (
+					"\"${PODS_ROOT}/Headers\"",
+					"\"${PODS_ROOT}/Headers/REComposeViewController\"",
+					"$(iOSOpenDevPath)/include",
+					"$(inherited)",
+				);
 				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/iOSOpenDev/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				iOSOpenDevBuildPackageOnAnyBuild = NO;
 				iOSOpenDevCopyOnBuild = NO;
@@ -349,6 +435,7 @@
 				4306366118509D870017DBFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
