@@ -64,7 +64,7 @@ static WhatsAtorViewController *sharedInstance;
 		return;
 	}
     
-	[sharedInstance dismiss]; //Back in my day, we could call our own class methods from instance methods...
+	[sharedInstance dismiss];
 }
 
 - (void)_dismissCompleted {
