@@ -1,6 +1,6 @@
 Package: com.imokhles.WhatsAtor
 Name: WhatsAtor
-Version: 1.3
+Version: 1.4
 Description: WhatsApp Messages From AnyWhere!
 Section: Tweaks
 Depends: firmware (>= 6.0), mobilesubstrate, libactivator
