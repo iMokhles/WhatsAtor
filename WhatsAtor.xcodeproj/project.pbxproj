@@ -303,7 +303,7 @@
 		4306365D18509D870017DBFD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_ENABLE_MODULES = YES;
 				COPY_PHASE_STRIP = NO;
 				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
@@ -336,7 +336,7 @@
 		4306365E18509D870017DBFD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_ENABLE_MODULES = YES;
 				COPY_PHASE_STRIP = YES;
 				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";

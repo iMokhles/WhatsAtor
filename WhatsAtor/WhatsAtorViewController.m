@@ -26,7 +26,7 @@ static WhatsAtorViewController *sharedInstance;
     sharedInstance = [[self alloc] init];
     
     addWindow = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    addWindow.windowLevel = UIWindowLevelStatusBar + 2.f;
+    addWindow.windowLevel = UIWindowLevelStatusBar + 1.f;
     
     previousKeyWindow = [UIWindow.keyWindow retain];
     [addWindow addSubview:sharedInstance.view];
@@ -42,7 +42,14 @@ static WhatsAtorViewController *sharedInstance;
     WhatsAtorComposeView.delegate = self;
     WhatsAtorComposeView.placeholderText = @"WhatsApp Message";
     NSString *imagePath = @"/Library/Activator/Listeners/com.imokhles.WhatsAtor/bg@2x.png";
-    [WhatsAtorComposeView.navigationBar setBackgroundImage:[UIImage imageWithContentsOfFile:imagePath] forBarMetrics:UIBarMetricsDefault];
+    
+    if (!REUIKitIsFlatMode()) {
+        [WhatsAtorComposeView.navigationBar setBackgroundImage:[UIImage imageWithContentsOfFile:imagePath] forBarMetrics:UIBarMetricsDefault];
+        WhatsAtorComposeView.navigationItem.leftBarButtonItem.tintColor = [UIColor colorWithRed:60/255.0 green:165/255.0 blue:194/255.0 alpha:1];
+        WhatsAtorComposeView.navigationItem.rightBarButtonItem.tintColor = [UIColor colorWithRed:29/255.0 green:118/255.0 blue:143/255.0 alpha:1];
+    } else {
+        WhatsAtorComposeView.navigationBar.tintColor = [UIColor colorWithRed:27/255.0 green:108/255.0 blue:181/255.0 alpha:1.0];
+    }
     
 }
 

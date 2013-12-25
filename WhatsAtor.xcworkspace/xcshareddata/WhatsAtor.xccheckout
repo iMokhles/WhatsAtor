@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>39BACB40-1F03-451A-B445-D7FEEA42EEBF</string>
+	<key>IDESourceControlProjectName</key>
+	<string>WhatsAtor</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>AA1F62B2-A102-4A5C-A3A8-F6FF5E7E21C8</key>
+		<string>https://github.com/iMokhles/WhatsAtor.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>WhatsAtor.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>AA1F62B2-A102-4A5C-A3A8-F6FF5E7E21C8</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/iMokhles/WhatsAtor.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>AA1F62B2-A102-4A5C-A3A8-F6FF5E7E21C8</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>AA1F62B2-A102-4A5C-A3A8-F6FF5E7E21C8</string>
+			<key>IDESourceControlWCCName</key>
+			<string>WhatsAtor</string>
+		</dict>
+	</array>
+</dict>
+</plist>
